@@ -1,0 +1,180 @@
+
+<!--HTML page for Edit Profile-->
+<!--
+	Created On:29-12-2019
+	Author:Ved Parsekar
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* input fields */
+input[type=text], input[type=password], .sel {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* style for buttons */
+button {
+  background-color: #00004d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.savebtn{
+	float:right;
+}
+
+label{
+	font-size:14px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* close button */
+.editcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* popup (background) */
+.modal {
+ /* display: none; */
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+/* popup content*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+
+/* Change styles small screens */
+@media screen and (max-width: 880px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+  .modal-content {
+  width: 80%; 
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.savebtn{
+	float:none;
+}
+
+button {
+ 
+  padding: 10px 15px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div  id="editprofile" class="modal">
+  <form class="modal-content" action="page.html" method="post">
+    <div class="editcontainer">
+      <span onclick="document.getElementById('editprofile').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h3>Edit profile</h3>
+    </div>
+    <div class="container">     
+	  <label><b>University:</b>
+	  <select class ="sel" required>
+			<option value="0">University</option>
+			<option value="1">University 1</option>
+			<option value="2">University 2</option>
+			<option value="3">University 3</option>
+	  </select></label>
+	  
+	  <label><b>College:</b>
+	  <select class ="sel" required>
+			<option value="0">Select College</option>
+			<option value="1">College 1</option>
+			<option value="2">College 2</option>
+			<option value="3">College 3</option>
+	</select>
+	</label>
+	
+	<label><b>Department:</b>
+	  <select class ="sel" required>
+			<option value="0">Select Department</option>
+			<option value="1">Department 1</option>
+			<option value="2">Department 2</option>
+			<option value="3">Department 3</option>
+	</select>
+	</label>
+
+	<label><b>Institution Address:</b></label>
+      <input type="text" placeholder="Institution Address" name="institute" required>
+	  <label><b>PR NO.:</b></label>
+      <input type="text" placeholder="PR NO." name="prno" required>
+	  <br/><br/>
+	  <a href="editprofile.html"><button>Previous</button></a>
+	  <button onclick="document.getElementById('editprofile').style.display='none'">Cancel</button>
+      <button type="submit" class="savebtn">Save and Finish</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
