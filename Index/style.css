@@ -1,0 +1,515 @@
+
+/*
+  CSS file for SBSI Home page
+
+	Created On:29-12-2019
+	Author:Ved Parsekar
+*/
+
+/*
+    1.Home Page
+      1.1 Header
+      1.2 Navigation Bar
+      1.3 Home page Content
+      1.4 Home Page Pictures
+      1.5 Footer
+      1.6 Media query
+
+    2.Activites
+
+    3.About Us
+      3.1 About Us content Wrapper
+      3.2 About Us Content
+      3.3 Media query
+
+    4.Contact Us
+      4.1 Contact Us info(grid)
+      4.2 Contact Us form
+      4.3 Media query
+
+    5.Login
+      5.1 Login Pop up
+      5.2 Login Form content
+      5.3 Login Form buttons,input
+      5.4 Media query
+
+    6.Register
+      6.1 registration form popup
+      6.2 registration form buttons,input
+      6.3 Media query
+*/
+
+
+  
+  /*===================================== 1. Home Page===================================== */
+
+  body{
+    background:#dad5d5;
+    color:#4a4c4d; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+
+  /*----------------1.1 Header---------------- */
+  .head{
+    background:#f6f7f8;
+    box-shadow: 0 0 20px 0 rgba(151, 143, 143, 0.3);
+    padding:2em;
+  }
+
+  /*----------------1.2 Navigation Bar---------------- */
+  .navbar-wrapper{
+    background:#040135;
+    box-shadow: 0 0 20px 0 rgba(151, 143, 143, 0.3);
+    padding:1em;
+  }
+  
+  .navbar-link{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+  }
+  .navbar, .navbar p{
+    background:#040135;
+    color: #dddee2;
+    margin: 0%;
+    padding: 0%;
+  } 
+
+  .navbar a:hover ,.navbar p:hover, a{
+    color: #fefeff;
+    text-decoration: none;
+  }
+  .navbar p:hover{
+    font-size: 17px;
+  }
+
+  .navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 5fr;
+    grid-gap:20px;
+  }
+  
+  /*------------------1.3 HomePage Content------------------ */
+  .content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    padding-top: 15em;
+  }
+
+  .content-wrapper p{
+    font-size: 14px;
+  }
+
+  .content-wrapper h4{
+    text-align: center;
+  }
+
+  .content{
+    background:#f6f7f8;
+    box-shadow: 0 0 20px 0 rgba(151, 143, 143, 0.3);
+    padding:2em;
+  }
+  
+  /* ------------------1.4 HomePage Picture------------------ */
+  .picture{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .picture h4{
+    text-align: center;
+  }
+
+  /* ------------------1.5 Footer------------------ */
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background:#040135;
+    box-shadow: 0 0 20px 0 rgba(151, 143, 143, 0.3);
+    color:#dddee2;
+    padding:5px;
+  }
+
+  .footer ul{
+    list-style-type: none;
+  }
+
+  .footer h6{
+    margin: 0%;
+  }
+
+  .footer .policies{
+    float: left;
+    margin: 0%;
+  }
+
+  .footer .address > *{
+    float: right;
+    margin-top: 0%;
+    margin-right: 60px;
+  }
+
+  /*------------------- 1.6 Media query-------------------------*/
+  @media(max-width:500px){
+    .navbar{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .picture{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ========================================== 2. Activities==================================== */
+
+
+
+  /* ========================================= 3. About Us===================================== */
+
+  .aboutus-content{
+    background:#f6f7f8;
+    box-shadow: 0 0 20px 0 rgba(151, 143, 143, 0.3);
+    padding:2em;
+  }
+
+
+  .aboutus-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 14px;
+  }
+
+  .aboutus-section h4{
+    text-align: center;
+  }
+
+
+
+  /* ========================================== 4. Contact us========================================= */
+
+
+
+  /*------------------- 4.1 Contact us (contact info grid)---------------------*/
+
+  .contactus-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .contactus-content{
+    background:#f6f7f8;
+    padding:2em;
+  }
+
+  .contactus-section h4, .contactus-section p{
+    text-align: center;
+  }
+
+   /*------------------- 4.2 Contact us (Form,buttons,input)---------------------*/
+  .contactus-input{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+  .contactform-content{
+    background:#f6f7f8;
+    padding-right:12em;
+    padding-left: 12em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .contactform-content textarea{
+    width: 99%;
+    height: 80px;
+    resize: none;
+    border: 1px solid #8887a7;
+    margin-top: 10px;
+  }
+
+  .contactform-content input[type=text],.contactform-content input[type=email]{
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #8887a7;
+    box-sizing: border-box;
+  }
+  
+  .contactus-btn {
+    background-color: #040135;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    width:  100%;
+    border-radius: 4px;
+  }
+  
+  .contactus-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .contactus-title {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  /*------------------- 4.3 Media query-------------------------*/
+  @media screen and (max-width: 600px) {
+    .contactus-btn {
+      padding: 10px 15px;
+    }
+  }
+
+  @media(max-width:500px){
+    .contactus-section{
+      grid-template-columns: 1fr;
+    }
+
+    .contactus-content{
+      padding:5px;
+    }
+  }
+    @media screen and (max-width: 850px) {
+    .contactform-content{
+      padding-right:2em;
+      padding-left: 2em;
+
+    }
+  }
+
+
+/* =========================================== 5. Login Page================================================*/
+  
+
+/*---------------- 5.1 login popup (background)-------------------- */
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+/*------------------------ 5.2 popup content--------------------*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/*------------------------ 5.3 popup buttons,input--------------------*/
+.loginform-content input[type=text],input[type=date],input[type=password] {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #8887a7;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  background-color: #040135;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;;
+  border-radius: 4px;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.loginform-title {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.loginform-content {
+  padding: 16px;
+}
+
+.loginform-content label {
+  font-size: 13px;
+}
+.loginform-content p{
+  font-size: 11px;
+}
+
+.forgot-password{
+  float: right;
+}
+
+/*Close Button */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #040135;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/*------------------- 5.4 Media query-------------------------*/
+
+/* Change styles small screens */
+@media screen and (max-width: 880px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+  .modal-content {
+    width: 80%; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-btn {
+    padding: 10px 15px;
+  }
+}
+
+
+
+/* ===================================== 6. Registration Page ======================================*/
+ 
+
+/*------------------------ 6.1 registration popup--------------------*/
+
+.reg-modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+/* popup content*/
+.reg-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 40%;
+}
+
+
+
+/*------------------------ 6.2 registartion popup (buttons,input)--------------------*/
+
+/* input fields */
+.regform-content input[type=text],input[type=date],input[type=password],input[type=email] , .reg-select {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #8887a7;
+  box-sizing: border-box;
+}
+
+/* style for buttons */
+.reg-btn {
+  background-color: #040135;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;;
+  border-radius: 4px;
+}
+
+.reg-btn:hover {
+  opacity: 0.9;
+}
+
+/* close button */
+.regform-title {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.regform-content {
+  padding: 16px;
+}
+
+.regform-content label {
+  font-size: 13px;
+}
+.regform-content p{
+  font-size: 11px;
+}
+
+.forgot-password{
+  float: right;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #040135;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/*------------------- 6.3 Media query-------------------------*/
+
+/* Change styles small screens */
+@media screen and (max-width: 880px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+  .modal-content {
+    width: 80%; 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reg-btn {
+    padding: 10px 15px;
+  }
+}

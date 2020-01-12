@@ -1,0 +1,155 @@
+
+<!--HTML page for SBSI About Us page-->
+<!--
+	Created On:10-1-2020
+	Author:Ved Parsekar
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Us</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!------Header------>
+<header>
+  <div class="head">
+    <h1>SBSI</h1>
+    <h5>Swachha Bharat Student Internship</h5>
+  </div>
+  <!------/Header------>
+  
+  <!------Navigation Bar------>
+  <nav class="navbar-wrapper">
+      <ul class="navbar-link">
+      <div class="navbar">
+        <li>
+          <a href="index.html"><p><b>Home</b></p></a>  
+        </li>
+        <li>
+          <a href="activites.html"><p><b>Activites</b></p></a> 
+        </li>
+        <li>
+          <a href="aboutus.html"><p><b>About Us</b></p></a> 
+        </li>
+        <li>
+          <a href="contactus.html"><p><b>Contact Us</b></p></a>  
+        </li>
+        <li>
+          <span onclick="document.getElementById('login').style.display='block'"><a></a><p><b>Login</b></p></a></span>   
+        </li>
+        <li>
+          <span onclick="document.getElementById('register').style.display='block'"><a><p><b>Register</b></p></a></span>   
+        </li>
+      </div>
+    </ul>
+    </nav>
+</header>
+  <!------/Navigation Bar------>
+    
+    <!------Login Form(Pop up)------>
+        <div  id="login" class="modal">
+          <form class="modal-content" action="page.html" method="post">
+            <div class="loginform-title">
+              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h3>Login</h3>
+            </div>
+            <div class="loginform-content">     
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Username" name="uname">
+              <label><b>Password</b></label>
+              <input type="text" placeholder="Password" name="password" required>
+              <br/>
+              <label><input type="checkbox" name="remember">Remember me</label>
+              <label class="forgot-password">Forgot Password?</label>
+              <a href="#"><button class="login-btn">Login</button></a>
+              <p onclick="document.getElementById('register').style.display='block'; document.getElementById('login').style.display='none'">Don't have an account? Sign Up Now</p>
+            </div>
+          </form>
+        </div>
+    <!------/Login Form(Pop up)------>
+    
+    <!-------Registration Form(Pop up)-------->
+    <div  id="register" class="reg-modal">
+      <form class="reg-modal-content" action="page.html" method="post">
+        <div class="regform-title">
+          <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h3>Register</h3>
+        </div>
+        <div class="regform-content">     
+          <label><b>Name</b></label>
+          <input type="text" placeholder="Name" name="name">
+          <label><b>Email</b></label>
+          <input type="email" placeholder="Email" name="email">
+          <label><b>Password</b></label>
+          <input type="text" placeholder="Password" name="password" required>
+          <label><b>Phone</b></label>
+          <input type="text" placeholder="Phone" name="phone">
+          <label><b>Date of birth</b></label>
+          <input type="date" placeholder="Date of birth" name="dob">
+          <label><b>Role</b></label>
+          <select class="reg-select">
+            <option value="intern">Intern</option>
+            <option value="mentor">Mentor</option>
+            <option value="nodalofficer">Nodal Officer</option>
+          </select>
+          <label><b>Institution</b></label>
+          <select class="reg-select">
+            <option value="Institution">Institution</option>
+            <option value="Institution">Institution</option>
+            <option value="Institution">Institution</option>
+          </select>
+          <label><b>Department</b></label>
+          <select class="reg-select">
+            <option value="Department">Department</option>
+            <option value="Department">Department</option>
+            <option value="Department">Department</option>
+          </select>  
+          <br/><br/>
+          <a href="#"><button class="reg-btn">Register</button></a>
+        </div>
+      </form>
+    </div>
+    <!-------/Registration Form(Pop up)-------->
+
+    <!-------/About Us-------->
+  <section>
+    <div class="aboutus-section">
+      <div class="aboutus-content">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, odio totam praesentium dolores perspiciatis, quo deleniti repellat maiores exercitationem delectus laborum! Corrupti totam dolore laborum alias, numquam ullam tempora est eveniet error nostrum ratione maxime adipisci velit ea accusamus ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione ullam ducimus mollitia temporibus facere voluptates, cumque deleniti blanditiis possimus veniam iure harum neque deserunt repudiandae molestias dolor inventore culpa? Recusandae nemo consequatur et ea cupiditate ipsum accusantium doloribus dolorum ullam, dolorem quam ad, quod fugiat, inventore deleniti animi officiis culpa quis rerum vero. Eius necessitatibus, culpa dolore rem hic sint recusandae veniam consequatur debitis nemo, iusto suscipit! Ut unde dolores obcaecati ducimus sapiente, amet, earum facere quam sed perferendis quis dicta quod! Et, velit. Aperiam sequi mollitia quas sint ipsum nihil provident, iste harum deserunt temporibus quod rem error.</p>
+      </div>
+    </div>
+  </section>
+  <!-------/About Us-------->
+
+  <!-------Footer-------->
+  <footer>
+    <div class="footer">
+      <div class="policies">
+        <ul>
+          <li><h5>Policies and Disclaimer</h5></li>
+          <li><h6>Disclaimer</h6></li>
+          <li><h6>Help and Assistance</h6></li>
+          <li><h6>Term and Conditions</h6></li>
+        </ul>
+      </div>
+      <div class="address">
+        <ul>
+            <li><h5>Contact Us</h5></li>
+            <li><h6>Address:Taligao Plateau,Goa,India</h6></li>
+            <li><h6>Phone:9999676798</h6></li>
+            <li><h6>Email:sbsi@unigoa.com</h6></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+    <!-------/Footer-------->
+</body>
+</html>
