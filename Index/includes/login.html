@@ -1,0 +1,30 @@
+
+<!--HTML page for SBSI Login-->
+<!--
+	Created On:12-01-2020
+	Author:Ved Parsekar
+-->
+
+<!------Login Form(Pop up)------>
+<div id="login" class="login-modal">
+    <form class="login-modal-content" action="page.html" method="post">
+        <div class="loginform-title">
+            <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h3>Login</h3>
+        </div>
+        <div class="loginform-content">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Username" name="uname">
+            <label><b>Password</b></label>
+            <input type="text" placeholder="Password" name="password" required>
+            <br />
+            <label><input type="checkbox" name="remember">Remember me</label>
+            <label class="forgot-password" onclick="document.getElementById('forgotpassword').style.display='block'; document.getElementById('login').style.display='none'">Forgot
+                Password?</label>
+            <a href="#"><button class="login-btn">Login</button></a>
+            <p onclick="document.getElementById('register').style.display='block'; document.getElementById('login').style.display='none'">Don't
+                have an account? Sign Up Now</p>
+        </div>
+    </form>
+</div>
+<!------/Login Form(Pop up)------>

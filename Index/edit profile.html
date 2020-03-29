@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] ,.sel{
+  
+  padding: 5px 10px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #00004d;
+  color: white;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #00004d;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.rightfield{
+	float: right;
+	padding-right:70px;
+}
+
+/* The Modal (background) */
+.modal {
+ 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 700px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  
+  .modal-content {
+  width: 100%; 
+}
+
+.rightfield{
+	float:right;
+	padding-right:0px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<h2>Edit Profile</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Edit Profile</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2>Edit Profile</h2>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Name:</b></label>
+      <input type="text" placeholder="Name" name="uname" required>
+	  <input type="text" placeholder="Middle Name" name="uname" required>
+	  <input type="text" placeholder="Last Name" name="uname" required>
+	  <br/>
+	  <label for="uname"><b>Username:</b></label>
+      <input type="text" placeholder="Username" name="uname" required>
+	  <br/><br/>
+	  <label for="uname"><b>Address</b></label>
+	  <hr>
+	  
+      <label for="uname"><b>Village/City:</b>
+	  <select class ="sel">
+			<option value="0">Select Village:</option>
+			<option value="1">Village 1</option>
+			<option value="2">Village 2</option>
+			<option value="3">Village 3</option>
+	  </select></label>
+	<div class="rightfield">
+	<label for="uname"><b>District:</b>
+	  <select class ="sel">
+			<option value="0">Select District:</option>
+			<option value="1">District 1</option>
+			<option value="2">District 2</option>
+			<option value="3">District 3</option>
+	</select>
+	</label>
+	</div>
+	<br/>
+	<label for="uname"><b>Taluka:</b>
+	  <select class ="sel">
+			<option value="0">Select Taluka:</option>
+			<option value="1">Taluka 1</option>
+			<option value="2">Taluka 2</option>
+			<option value="3">Taluka 3</option>
+	</select>
+	</label>
+	<div class="rightfield">
+	<label for="uname"><b>State:</b>
+	  <select class ="sel">
+			<option value="0">Select State:</option>
+			<option value="1">State 1</option>
+			<option value="2">State 2</option>
+			<option value="3">State 3</option>
+	</select>
+	</label>
+	</div>
+	
+	<br/>
+	<label for="uname"><b>Pin:</b>
+	  <input type="text" placeholder="Pin" name="uname" required></label>
+	<div class="rightfield">
+	<label for="uname"><b>Country:</b>
+	  <select class ="sel">
+			<option value="0">Select Country:</option>
+			<option value="1">Country 1</option>
+			<option value="2">Country 2</option>
+			<option value="3">Country 3</option>
+	</select>
+	</label>
+	</div>
+	<br/><br/>
+	  <label for="uname"><b>Contact</b></label>
+	  <hr>  
+      <label for="uname"><b>Contact no:</b>
+	  	  <input type="text" placeholder="Pin" name="uname" required></label>
+		  <div class="rightfield">
+	<label for="uname"><b>Email:</b>
+	  	  <input type="text" placeholder="Pin" name="uname" required>
+		  </div>
+		  </label>
+	<br/><br/>
+	
+	  
+       
+      <button type="submit">Save and Proceed</button>
+	  <button type="submit" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+      
+    </div>
+   <br/>
+  </form>
+</div>
+
+
+
+</body>
+</html>
